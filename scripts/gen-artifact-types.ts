@@ -8,16 +8,17 @@ const artifactContent = fs.readFileSync("./artifacts.json", "utf-8")
 const artifacts: string[] = JSON.parse(artifactContent);
 
 (async function(){
+    fs.mkdirSync(destination, {recursive: true})
     for(const artifact of artifacts) {
-        let content;
+        let abi;
         try {
-            content = JSON.stringify(await import(artifact));
+            abi = (await import(artifact)).abi;
         } catch(e) {
-            content = fs.readFileSync(artifact, "utf-8")
+            abi = JSON.parse(fs.readFileSync(artifact, "utf-8")).abi
         }
         const filename = path.basename(artifact, ".json")
         const file = path.join(destination, filename + ".ts")
-        fs.writeFileSync(file, `const artifact = ${content.trimEnd()} as const; export default artifact;`)
+        fs.writeFileSync(file, `const abi = ${JSON.stringify(abi).trimEnd()} as const; export default abi;`)
         console.log(`Created/updated ${file}`)
     }
 })()

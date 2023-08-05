@@ -1,9 +1,4 @@
 [
-  "@openzeppelin/contracts/build/contracts/ERC20.json",
-  "@openzeppelin/contracts/build/contracts/ERC721.json",
-  "@openzeppelin/contracts/build/contracts/ERC777.json",
-  "@openzeppelin/contracts/build/contracts/ERC1155.json",
-  "@openzeppelin/contracts/build/contracts/ERC4626.json",
   "@openzeppelin/contracts/build/contracts/IERC20.json",
   "@openzeppelin/contracts/build/contracts/IERC20Metadata.json",
   "@openzeppelin/contracts/build/contracts/IERC721.json",
