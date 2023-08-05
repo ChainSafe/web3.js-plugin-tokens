@@ -5,18 +5,18 @@
 
 is a plugin that extends web3.js with additional methods to interact with common token interfaces (ERC20, ERC721, ERC1155...)
 
-Uses `@openzeppelin/contracts` as a source of contract abi files and does contract type inferance like https://github.com/web3/web3-contract-types-example .
+Uses `@openzeppelin/contracts` as a source of contract abi files and does contract type inference like <https://github.com/web3/web3-contract-types-example>.
 
 
 how to use it
 -------------
 
-Run `npm install web3 web3-tokens`.
+Run `npm install web3 @chainsafe/web3-plugin-tokens`.
 
 ```typescript
 
 import { Web3 } from 'web3';
-import { TokensPlugin } from 'web3-tokens';
+import { TokensPlugin } from '@chainsafe/web3-plugin-tokens';
 
 const web3 = new Web3('https://eth.public-rpc.com'); // put any node url that is connected to mainnet
 web3.registerPlugin(new TokensPlugin());
