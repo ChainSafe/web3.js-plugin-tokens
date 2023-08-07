@@ -4,6 +4,10 @@
   "description": "Plugin to extend web3.js with additional methods to interact with common token interfaces (ERC20, ERC721, ERC1155...)",
   "main": "lib/tokens-plugin.js",
   "types": "lib/tokens-plugin.d.ts",
+  "homepage": "https://github.com/ChainSafe/web3.js-plugin-tokens#readme",
+  "bugs": {
+    "url": "https://github.com/ChainSafe/web3.js-plugin-tokens/issues"
+  },
   "scripts": {
     "gen": "rm -rf ./src/artifacts && ts-node ./scripts/gen-artifact-types ./src/artifacts",
     "lint": "eslint '{src,test}/**/*.ts'",
