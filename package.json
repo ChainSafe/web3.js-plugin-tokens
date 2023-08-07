@@ -1,6 +1,6 @@
 {
   "name": "@chainsafe/web3-plugin-tokens",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Plugin to extend web3.js with additional methods to interact with common token interfaces (ERC20, ERC721, ERC1155...)",
   "main": "lib/tokens-plugin.js",
   "types": "lib/tokens-plugin.d.ts",
