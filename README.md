@@ -1,6 +1,8 @@
 @chainsafe/web3-plugin-tokens
 ===========
 
+#### Web3.js libraries are being sunset on March 4th, 2025. For migration guides and more details please refer to [Chainsafe blog](https://blog.chainsafe.io/web3-js-sunset/)
+
 > Many thanks to [PeterTheOne](https://github.com/PeterTheOne) for developing initial version at EthPrague.
 
 is a plugin that extends web3.js with additional methods to interact with common token interfaces (ERC20, ERC721, ERC1155...)
